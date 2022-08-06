@@ -11,6 +11,7 @@ import { DetalleProductoComponent } from './producto/detalle-producto.component'
 import { EditarProductoComponent } from './producto/editar-producto.component';
 import { ListaProductoComponent } from './producto/lista-producto.component';
 import { NuevoProductoComponent } from './producto/nuevo-producto.component';
+import { ListaUsuariosComponent } from './usuarios/lista-usuarios/lista-usuarios.component';
 
 const routes: Routes = [
   { path: '', component: IndexComponent },
@@ -39,6 +40,12 @@ const routes: Routes = [
   {
     path: 'editar/:id',
     component: EditarProductoComponent,
+    canActivate: [ProdGuardService],
+    data: { expectedRol: ['admin'] },
+  },
+  {
+    path: 'usuarios',
+    component: ListaUsuariosComponent,
     canActivate: [ProdGuardService],
     data: { expectedRol: ['admin'] },
   },

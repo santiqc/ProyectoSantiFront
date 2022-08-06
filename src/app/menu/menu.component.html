@@ -14,6 +14,11 @@
         <li class="nav-item" *ngIf="isAdmin">
           <a class="nav-link"  routerLink="/nuevo"><i class="fa-solid fa-circle-plus"></i>&nbsp;Nuevo</a>
         </li>
+        <li class="nav-item" *ngIf="isAdmin">
+          <a class="nav-link"  routerLink="/usuarios"><i class="fa-solid fa-circle-plus"></i>&nbsp;Gestion Usuarios</a>
+        </li>
+        
+       
       </ul>
       <form class="d-flex" role="search">
         <button  *ngIf="!isLogged" class="btn btn-outline-success" routerLink="/login" type="submit"><i class="fa-solid fa-right-to-bracket"></i> Iniciar sesion</button>
