@@ -23,6 +23,11 @@ import { IndexComponent } from './index/index.component';
 import { interceptorProvider } from './interceptors/prod-interceptor.service';
 import { SendEmailComponent } from './changepassword/send-email.component';
 import { ChangePasswordComponent } from './changepassword/change-password.component';
+import { ListaUsuariosComponent } from './usuarios/lista-usuarios/lista-usuarios.component';
+import { EditUsuarioComponent } from './usuarios/edit-usuario/edit-usuario.component';
+import { DetalleUsuarioComponent } from './usuarios/detalle-usuario/detalle-usuario.component';
+import { NuevoUsuarioComponent } from './usuarios/nuevo-usuarios/nuevo-usuario.component';
+
 
 @NgModule({
   declarations: [
@@ -36,7 +41,11 @@ import { ChangePasswordComponent } from './changepassword/change-password.compon
     MenuComponent,
     IndexComponent,
     SendEmailComponent,
-    ChangePasswordComponent
+    ChangePasswordComponent,
+    ListaUsuariosComponent,
+    EditUsuarioComponent,
+    DetalleUsuarioComponent,
+    NuevoUsuarioComponent
   ],
   imports: [
     BrowserModule,
