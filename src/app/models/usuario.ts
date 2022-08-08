@@ -5,8 +5,7 @@ export class Usuario {
     email: string;
     roles: Role[];
     
-  constructor(id?: number, nombre?: string, nombreUsuario?: string, email?: string, roles?: Role[]) {
-    this.id = id;
+  constructor(nombre?: string, nombreUsuario?: string, email?: string, roles?: Role[]) {
     this.nombre = nombre;
     this.nombreUsuario = nombreUsuario;
     this.email = email;

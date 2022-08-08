@@ -24,6 +24,10 @@ import { interceptorProvider } from './interceptors/prod-interceptor.service';
 import { SendEmailComponent } from './changepassword/send-email.component';
 import { ChangePasswordComponent } from './changepassword/change-password.component';
 import { ListaUsuariosComponent } from './usuarios/lista-usuarios/lista-usuarios.component';
+import { EditUsuarioComponent } from './usuarios/edit-usuario/edit-usuario.component';
+import { DetalleUsuarioComponent } from './usuarios/detalle-usuario/detalle-usuario.component';
+import { NuevoUsuarioComponent } from './usuarios/nuevo-usuarios/nuevo-usuario.component';
+
 
 @NgModule({
   declarations: [
@@ -38,7 +42,10 @@ import { ListaUsuariosComponent } from './usuarios/lista-usuarios/lista-usuarios
     IndexComponent,
     SendEmailComponent,
     ChangePasswordComponent,
-    ListaUsuariosComponent
+    ListaUsuariosComponent,
+    EditUsuarioComponent,
+    DetalleUsuarioComponent,
+    NuevoUsuarioComponent
   ],
   imports: [
     BrowserModule,
